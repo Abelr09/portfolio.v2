@@ -1,0 +1,64 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+    {
+        date: "Octubre 2025 - Actualidad",
+        title: "Banco Itaú (InQuality S.A.) |  Desarrollador Full Stack",
+        description: [
+            "Automatización de procesos con Automate (emails y gestión de archivos)",
+            "Desarrollo de macros VBA para sistemas legacy en Excel",
+            "Consultas y gestión de datos con SQL Server",
+            "Web scraping",
+            "Soporte técnico a usuarios",
+            "Reducción de tiempos operativos mediante automatización",
+            "Documentación técnica y manuales de usuario",
+        ],
+        badge: "Latest",
+        badgeColor: "bg-brand-softer border-brand-subtle text-fg-brand-strong",
+        link: {
+            href: "#",
+            icon: {
+                width: 4,
+                height: 4,
+                marginRight: 1.5,
+                marginLeft: -0.5,
+            },
+        },
+    },
+    {
+        date: "Enero 2024 - Octubre 2025",
+        title: "Analista de automatización RPA",
+        description: [
+            "Desarrollo de bots con Rocketbot para procesos financieros y conciliaciones bancarias (extracción, matching y reportes), reduciendo errores manuales",
+            "Automatización web con Python (Selenium) e integración con PostgreSQL y Oracle",
+            "Automatización de procesos de negocio (IVA, RG90, correos con n8n)",
+            "Relevamiento de procesos, dimensionamiento de soluciones y desarrollo de POC",
+            "Diseño de diagramas de flujo y participación en reuniones con clientes",
+            "Documentación técnica y manuales de usuario",
+        ],
+    },
+    {
+        date: "Octubre 2023 - Enero 2024",
+        title: "InQuality S.A.| Web Developer (WordPress)",
+        description: [
+            "Mantenimiento y mejora de sitio web de la empresa (WordPress)",
+            "Personalización con HTML, CSS, JS y PHP",
+            "Optimización de rendimiento y SEO",
+            "Implementación de medidas de seguridad y actualizaciones",
+            "Colaboración con equipo de marketing para contenido y diseño",
+        ],
+    },
+];
+---
+
+<ol class="relative border-s border-default ml-3">
+    {
+        EXPERIENCE.map((experience) => (
+            <li class="mb-10 ms-6">
+                <ExperienceItem {...experience} />
+            </li>
+        ))
+    }
+
+</ol>

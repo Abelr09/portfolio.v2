@@ -1,0 +1,88 @@
+---
+const technologies = [
+    { name: "Python", icon: "/tech/python.svg" },
+    { name: "JavaScript", icon: "/tech/javascript.svg" },
+    { name: "Astro", icon: "/tech/astro.svg" },
+    { name: "Tailwind", icon: "/tech/tailwind.svg" },
+    { name: "PHP", icon: "/tech/php.svg" },
+    { name: "Oracle", icon: "/tech/oracle.svg" },
+    { name: "Selenium", icon: "/tech/selenium.svg" },
+    { name: "Rocketbot", icon: "/tech/rocketbot.svg" },
+];
+---
+
+<section id="about" class="mx-auto max-w-6xl px-6 py-28">
+    <div class="mb-16 text-center">
+        <h2 class="text-4xl font-bold text-white">Sobre mí</h2>
+        <div class="mx-auto mt-4 h-1 w-24 rounded-full bg-blue-500"></div>
+    </div>
+
+    <div class="text-center max-w-3xl mx-auto">
+        <h3 class="mb-6 text-3xl font-bold text-white">
+            Desarrollador Full Stack & RPA
+        </h3>
+
+        <p class="mb-4 text-lg text-gray-300">
+            Soy Abel Amarilla, desarrollador enfocado en la creación de
+            aplicaciones web modernas y automatización de procesos.
+        </p>
+
+        <p class="mb-4 text-lg text-gray-300">
+            Tengo experiencia desarrollando soluciones con Python, PHP,
+            JavaScript y herramientas de RPA como Rocketbot y Selenium.
+        </p>
+
+        <p class="text-lg text-gray-300">
+            Me apasiona resolver problemas, optimizar procesos y crear
+            productos digitales útiles para personas y empresas.
+        </p>
+    </div>
+
+    <!-- Carrusel debajo del texto -->
+    <div class="w-full overflow-hidden mt-12">
+        <div class="carousel-track">
+            {
+                [...technologies, ...technologies].map((tech) => (
+                    <div class="tech-card flex-shrink-0">
+                        <img src={tech.icon} alt={tech.name} />
+                        <span>{tech.name}</span>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    .carousel-track {
+        display: flex;
+        width: max-content;
+        gap: 1.5rem;
+        animation: scroll 25s linear infinite;
+    }
+
+    .tech-card {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 20px;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        min-width: 160px; /* asegura que cada tarjeta tenga tamaño mínimo */
+    }
+
+    .tech-card img {
+        width: 32px;
+        height: 32px;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+</style>
