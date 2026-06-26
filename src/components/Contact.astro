@@ -1,86 +1,72 @@
-<section
-	id="contact"
-	class="mx-auto max-w-6xl px-6 py-28"
->
+---
+import LinkedInIcon from "../icons/LinkedIn.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import Gmail from "../icons/Gmail.astro";
+import WhatsAppIcon from "../icons/WhatsApp.astro";
+---
+
+<section class="mx-auto max-w-6xl px-6">
 	<div class="text-center">
-		<h2
-			class="text-4xl font-bold text-white"
-		>
-			Contacto
-		</h2>
+		<h2 class="text-3xl md:text-4xl font-bold text-white">Contacto</h2>
 
-		<div
-			class="mx-auto mt-4 h-1 w-24 rounded-full bg-blue-500"
-		></div>
+		<div class="mx-auto mt-4 h-1 w-24 rounded-full bg-blue-500"></div>
 
-		<p
-			class="mx-auto mt-8 max-w-2xl text-lg text-gray-300"
-		>
-			¿Tienes un proyecto o una
-			oportunidad laboral? Estoy
-			disponible para colaborar en
-			desarrollo web, automatización de
-			procesos y soluciones digitales.
+		<p class="mx-auto mt-8 max-w-2xl text-lg text-gray-300">
+			¿Tienes un proyecto o una oportunidad laboral? Estoy disponible para
+			colaborar en desarrollo web, automatización de procesos y soluciones
+			digitales.
 		</p>
 	</div>
 
-	<div
-		class="mt-16 grid gap-6 md:grid-cols-3"
-	>
+	<div class="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 		<a
-			href="mailto:tuemail@gmail.com"
-			class="rounded-2xl border border-slate-800 bg-slate-900/40 p-8 text-center transition hover:-translate-y-2 hover:border-blue-500"
+			href="mailto:abelamarilla51777@gmail.com"
+			target="_blank"
+			class="group flex flex-col items-center gap-4 p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md transition-all duration-300 hover:scale-105
+			hover:border-green-500 hover:shadow-[0_0_25px_rgba(72, 187, 120, 0.6)]"
 		>
-			<h3
-				class="mb-2 text-xl font-semibold text-white"
-			>
-				Email
-			</h3>
+			<Gmail
+				class="w-10 h-10 text-green-400 transition-transform group-hover:rotate-6"
+			/>
+			<h3 class="text-xl font-semibold text-white">Email</h3>
 
-			<p class="text-gray-400">
-				tuemail@gmail.com
-			</p>
+			<p class="text-gray-400">Contactame</p>
 		</a>
 
 		<a
-			href="https://github.com/"
+			href="https://github.com/Abelr09"
 			target="_blank"
-			class="rounded-2xl border border-slate-800 bg-slate-900/40 p-8 text-center transition hover:-translate-y-2 hover:border-blue-500"
+			class="group flex flex-col items-center gap-4 p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-gray-400 hover:shadow-[0_0_25px_rgba(255, 255, 255, 0.6)]"
 		>
-			<h3
-				class="mb-2 text-xl font-semibold text-white"
-			>
-				GitHub
-			</h3>
+			<GitHubIcon
+				class="w-10 h-10 text-white transition-transform group-hover:rotate-6"
+			/>
+			<h3 class="text-xl font-semibold text-white">GitHub</h3>
 
-			<p class="text-gray-400">
-				Ver repositorios
-			</p>
+			<p class="text-gray-400">Ver repositorios</p>
 		</a>
 
 		<a
-			href="https://linkedin.com/"
+			href="https://linkedin.com/in/abelr09"
 			target="_blank"
-			class="rounded-2xl border border-slate-800 bg-slate-900/40 p-8 text-center transition hover:-translate-y-2 hover:border-blue-500"
+			class="group flex flex-col items-center gap-4 p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_25px_rgba(59, 130, 246, 0.6)]"
 		>
-			<h3
-				class="mb-2 text-xl font-semibold text-white"
-			>
-				LinkedIn
-			</h3>
+			<LinkedInIcon
+				class="w-10 h-10 text-blue-500 transition-transform group-hover:rotate-6"
+			/>
+			<h3 class="text-xl font-semibold text-white">LinkedIn</h3>
 
-			<p class="text-gray-400">
-				Conectemos
-			</p>
+			<p class="text-gray-400">Conectemos</p>
 		</a>
 	</div>
 
 	<div class="mt-12 text-center">
 		<a
-			href="https://wa.me/595XXXXXXXXX"
+			href="https://wa.me/595975707689"
 			target="_blank"
-			class="inline-flex rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-500"
+			class="inline-flex items-center gap-3 rounded-xl bg-green-600 px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-green-500 hover:shadow-[0_0_25px_rgba(34, 197, 94, 0.6)]"
 		>
+			<WhatsAppIcon class="w-5 h-5" />
 			Enviar mensaje
 		</a>
 	</div>

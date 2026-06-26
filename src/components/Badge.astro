@@ -1,3 +1,29 @@
-<span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-<slot />
+<span
+    class="inline-flex
+	items-center
+	gap-2
+	px-4
+	py-2
+	rounded-full
+	border
+	border-green-500/30
+	bg-green-500/10
+	backdrop-blur-md
+	text-green-300
+	text-sm
+	font-semibold
+	shadow-[0_0_20px_rgba(34,197,94,.25)]
+	animate-pulse"
+>
+ <a
+		href="https://www.linkedin.com/in/abelr09"
+		target="_blank"
+		class="flex items-center gap-2"
+	>
+    <span class="w-2.5
+		h-2.5
+		rounded-full
+		bg-green-400"></span>
+
+    <slot />
 </span>
