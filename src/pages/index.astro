@@ -16,33 +16,31 @@ import About from "../components/About.astro";
 ---
 
 <Layout
-	title="Portfolio de Abel - desarrollador Full Stack, Programador Web y RPA Developer"
-	description="Bienvenido a mi portfolio de desarrollo web, donde encontrarás proyectos innovadores y soluciones creativas.
+  title="Portfolio de Abel - desarrollador Full Stack, Programador Web y RPA Developer"
+  description="Bienvenido a mi portfolio de desarrollo web, donde encontrarás proyectos innovadores y soluciones creativas.
 	 Soy un desarrollador Full Stack apasionado por la tecnología y la programación, con experiencia en una amplia gama de tecnologías y herramientas.
 	 Explora mis proyectos destacados, desde aplicaciones web hasta soluciones de automatización,
 	 y descubre cómo puedo contribuir a tu próximo proyecto.
 	  ¡Gracias por visitar mi portfolio!"
 >
-	<main class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
-		<SectionContainer
-			class="min-h-screen flex flex-col items-center justify-center"
-		>
-			<div class="flex flex-col items-center text-center">
-				<h1
-					class="text-white
-					text-3xl
-					md:text-6xl
-					font-bold
-					mb-8"
-				>
-					<span class="title">Hey, soy Abel!👋</span>
-				</h1>
-
-				<div class="mb-10">
-					<Badge> Disponible para trabajar </Badge>
-				</div>
-				<div
-					class="mt-4
+  <main class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
+    <SectionContainer
+      class="min-h-screen flex flex-col items-center justify-center"
+    >
+      <div class="flex flex-col items-center text-center">
+        <h1 class="hero-title
+	text-white
+	text-3xl
+	md:text-6xl
+	font-bold
+	mb-8">
+          Hey, soy Abel! 👋
+        </h1>
+        <div class="mb-10">
+          <Badge> Disponible para trabajar </Badge>
+        </div>
+        <div
+          class="mt-4
 					h-[3px]
 					w-40
 					mb-10
@@ -51,102 +49,95 @@ import About from "../components/About.astro";
 					from-cyan-400
 					via-blue-500
 					to-purple-500"
-				>
-				</div>
-				<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]"></h2>
+        >
+        </div>
+        <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]"></h2>
 
-				<h2
-					class="text-base sm:text-lg md:text-xl max-w-3xl leading-relaxed text-gray-300 text-center mx-auto mt-6 mb-10"
-				>
-					<span class="text-yellow-200/90">+1 año de experiencia</span
-					>. <span class="text-white">Desarrollador Full Stack.</span>
-					<span class="text-red-200/90"
-						>De San Ignacio Misiones, Paraguay.</span
-					><br />
-					Estoy emocionado por la oportunidad de contribuir a proyectos
-					innovadores y seguir creciendo como desarrollador.
-				</h2>
-				<ul class="flex flex-wrap justify-center gap-4 mt-10 mb-10">
-					<li>
-						<a
-							href="https://linkedin.com/in/abelr09"
-							target="_blank"
-							rel="noopener"
-							class="group flex items-center justify-center gap-3 w-full sm:w-auto px-5 py-3 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-blue-500 hover:bg-blue-500/10 hover:shadow-[0_0_25px_rgba(59,130,246,0.8)]"
-						>
-							<LinkedInIcon
-								class="w-6 h-6 fill-current text-blue-500 transition-transform duration-300 group-hover:rotate-6"
-							/>
-							<span class="text-white font-medium">LinkedIn</span>
-						</a>
-					</li>
+        <h2
+          class="text-base sm:text-lg md:text-xl max-w-3xl leading-relaxed text-gray-300 text-center mx-auto mt-6 mb-10"
+        >
+          <span class="text-yellow-200/90">+1 año de experiencia</span>. <span
+            class="text-white">Desarrollador Full Stack.</span
+          >
+          <span class="text-red-200/90">De San Ignacio Misiones, Paraguay.</span
+          ><br />
+          Estoy emocionado por la oportunidad de contribuir a proyectos innovadores
+          y seguir creciendo como desarrollador.
+        </h2>
+        <ul class="flex flex-wrap justify-center gap-4 mt-10 mb-10">
+          <li>
+            <a
+              href="https://linkedin.com/in/abelr09"
+              target="_blank"
+              rel="noopener"
+              class="group flex items-center justify-center gap-3 w-full sm:w-auto px-5 py-3 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-blue-500 hover:bg-blue-500/10 hover:shadow-[0_0_25px_rgba(59,130,246,0.8)]"
+            >
+              <LinkedInIcon
+                class="w-6 h-6 fill-current text-blue-500 transition-transform duration-300 group-hover:rotate-6"
+              />
+              <span class="text-white font-medium">LinkedIn</span>
+            </a>
+          </li>
 
-					<li>
-						<a
-							href="https://github.com/abelr09"
-							target="_blank"
-							rel="noopener"
-							class="group flex items-center justify-center gap-3 w-full sm:w-auto px-5 py-3 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-gray-400 hover:bg-gray-500/10 hover:shadow-[0_0_25px_rgba(156,163,175,0.8)]"
-						>
-							<GitHubIcon
-								class="w-6 h-6 fill-current text-white transition-transform duration-300 group-hover:rotate-6"
-							/>
-							<span class="text-white font-medium">GitHub</span>
-						</a>
-					</li>
+          <li>
+            <a
+              href="https://github.com/abelr09"
+              target="_blank"
+              rel="noopener"
+              class="group flex items-center justify-center gap-3 w-full sm:w-auto px-5 py-3 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-gray-400 hover:bg-gray-500/10 hover:shadow-[0_0_25px_rgba(156,163,175,0.8)]"
+            >
+              <GitHubIcon
+                class="w-6 h-6 fill-current text-white transition-transform duration-300 group-hover:rotate-6"
+              />
+              <span class="text-white font-medium">GitHub</span>
+            </a>
+          </li>
 
-					<li>
-						<a
-							href="https://instagram.com/abel_amarilla9"
-							target="_blank"
-							rel="noopener"
-							class="group flex items-center justify-center gap-3 w-full sm:w-auto px-5 py-3 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-pink-500 hover:bg-pink-500/10 hover:shadow-[0_0_25px_rgba(236,72,153,0.8)]"
-						>
-							<InstagramIcon
-								class="w-6 h-6 fill-current text-pink-500 transition-transform duration-300 group-hover:rotate-6"
-							/>
-							<span class="text-white font-medium">Instagram</span
-							>
-						</a>
-					</li>
+          <li>
+            <a
+              href="https://instagram.com/abel_amarilla9"
+              target="_blank"
+              rel="noopener"
+              class="group flex items-center justify-center gap-3 w-full sm:w-auto px-5 py-3 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-pink-500 hover:bg-pink-500/10 hover:shadow-[0_0_25px_rgba(236,72,153,0.8)]"
+            >
+              <InstagramIcon
+                class="w-6 h-6 fill-current text-pink-500 transition-transform duration-300 group-hover:rotate-6"
+              />
+              <span class="text-white font-medium">Instagram</span>
+            </a>
+          </li>
 
-					<li>
-						<a
-							href="mailto:abelamarilla51777@gmail.com"
-							target="_blank"
-							rel="noopener"
-							class="group flex items-center justify-center gap-3 w-full sm:w-auto px-5 py-3 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-green-500 hover:bg-green-500/10 hover:shadow-[0_0_25px_rgba(72,187,120,0.8)]"
-						>
-							<GmailIcon
-								class="w-6 h-6 fill-current text-white transition-transform duration-300 group-hover:rotate-6"
-							/>
-							<span class="text-white font-medium">Gmail</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</SectionContainer>
+          <li>
+            <a
+              href="mailto:abelamarilla51777@gmail.com"
+              target="_blank"
+              rel="noopener"
+              class="group flex items-center justify-center gap-3 w-full sm:w-auto px-5 py-3 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-green-500 hover:bg-green-500/10 hover:shadow-[0_0_25px_rgba(72,187,120,0.8)]"
+            >
+              <GmailIcon
+                class="w-6 h-6 fill-current text-white transition-transform duration-300 group-hover:rotate-6"
+              />
+              <span class="text-white font-medium">Gmail</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </SectionContainer>
 
-			<SectionContainer id="sobre-mi">
-				<About />
-			</SectionContainer>
+    <SectionContainer id="sobre-mi">
+      <About />
+    </SectionContainer>
 
-			<SectionContainer id="experiencia">
-				<Experience />
-			</SectionContainer>
+    <SectionContainer id="experiencia">
+      <Experience />
+    </SectionContainer>
 
-			<SectionContainer id="proyectos">
-				<Projects />
-			</SectionContainer>
+    <SectionContainer id="proyectos">
+      <Projects />
+    </SectionContainer>
 
-			<SectionContainer id="contacto">
-				<Contact />
-			</SectionContainer>
-
-	</main>
+    <SectionContainer id="contacto">
+      <Contact />
+    </SectionContainer>
+  </main>
 </Layout>
-<script>
-	if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-		document.querySelector(".title")?.classList.add("animate");
-	}
-</script>
