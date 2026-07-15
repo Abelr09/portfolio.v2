@@ -3,8 +3,8 @@ import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 interface Props {
-	title: string;
-	description: string;
+  title: string;
+  description: string;
 }
 
 const { title, description } = Astro.props;
@@ -12,20 +12,20 @@ const { title, description } = Astro.props;
 
 <!doctype html>
 <html lang="es" class="scroll-smooth">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<meta name="description" content={description} />
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
 
-	<body class="relative min-h-screen overflow-y-scroll">
-		<div class="particles">
-			<div
-				class="absolute inset-0 -z-10 min-h-full w-full [background:
+  <body class="relative min-h-screen overflow-y-scroll">
+    <div class="particles">
+      <div
+        class="absolute inset-0 -z-10 min-h-full w-full [background:
 				radial-gradient(
 				circle at 15% 20%,
 				rgba(59,130,246,.25),
@@ -42,82 +42,91 @@ const { title, description } = Astro.props;
 				transparent 40%
 				),
 				#050505;]"
-			>
-			</div>
-		</div>
-		<Header />
-		<slot />
-		<Footer />
-	</body>
+      >
+      </div>
+    </div>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
 
-	<style is:global>
-		:root {
-			color-scheme: light dark;
-		}
-		
-		html {
-			font-family: system-ui, sans-serif;
-			scroll-behavior: smooth;
-			scroll-snap-type: y mandatory;
-			scroll-padding-top: 120px;
-		}
-		section {
-			scroll-margin-top: 120px;
-		}
-		body {
-			background: #050505;
-			display: flex;
-			flex-direction: column;
-			min-height: 100vh;
-		}
-		.particles::before,
-		.particles::after {
-			content: "";
-			position: absolute;
-			width: 400px;
-			height: 400px;
-			border-radius: 50%;
-			filter: blur(120px);
-			opacity: 0.15;
-		}
+  <style is:global>
+    :root {
+      color-scheme: light dark;
+    }
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+    html {
+      scrollbar-width: none;
+    }
+    body {
+      -ms-overflow-style: none;
+    }
+    html {
+      font-family: system-ui, sans-serif;
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+      scroll-padding-top: 120px;
+    }
+    section {
+      scroll-margin-top: 120px;
+    }
+    body {
+      background: #050505;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .particles::before,
+    .particles::after {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.15;
+    }
 
-		.particles::before {
-			background: #3b82f6;
-			top: 10%;
-			left: 10%;
-		}
+    .particles::before {
+      background: #3b82f6;
+      top: 10%;
+      left: 10%;
+    }
 
-		.particles::after {
-			background: #a855f7;
-			bottom: 10%;
-			right: 10%;
-		}
-		html,
-		body {
-			overflow-x: hidden;
-		}
-		::before,
-		::after {
-			box-sizing: border-box;
-		}
-		@keyframes fadeInUp {
-	from {
-		opacity: 0;
-		transform: translateY(-50px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
+    .particles::after {
+      background: #a855f7;
+      bottom: 10%;
+      right: 10%;
+    }
+    html,
+    body {
+      overflow-x: hidden;
+    }
+    ::before,
+    ::after {
+      box-sizing: border-box;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-.title {
-	display: inline-block;
-	opacity: 0;
-}
+    .title {
+      display: inline-block;
+      opacity: 0;
+    }
 
-.title.animate {
-	animation: fadeInUp 1s ease forwards;
-}
-	</style>
+    .title.animate {
+      animation: fadeInUp 1s ease forwards;
+    }
+  </style>
 </html>
